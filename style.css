@@ -135,29 +135,21 @@ body {
   color: #111827;
 }
 
-.mountain-progress-grid {
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  gap: 6px;
-  max-width: 720px;
-  margin: 24px auto 0;
-}
-
-.mountain-cell {
+.mountain-progress {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  max-width: 720px;
+  height: 14px;
+  margin: 24px auto 0;
   background: #d1d5db;
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-  border-radius: 2px;
-  transition: transform 0.2s ease;
+  border-radius: 999px;
+  overflow: hidden;
 }
 
-.mountain-cell.completed {
-  background: #6d8cff;
-}
-
-.mountain-cell:hover {
-  transform: translateY(-2px);
+.mountain-progress-fill {
+  width: 37%;
+  height: 100%;
+  background: linear-gradient(90deg, #6d8cff, #4f46e5);
+  border-radius: 999px;
 }
 
 .footer {
