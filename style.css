@@ -67,8 +67,8 @@ body {
 .hero-text {
   max-width: 700px;
   font-size: 1.15rem;
-  color: #2563eb;
-  margin-bottom: 32px;
+  color: #64748b;
+  margin-bottom: 0 auto 32px;
 }
 
 .button {
