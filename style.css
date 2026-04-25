@@ -147,12 +147,17 @@ body {
   width: 100%;
   aspect-ratio: 1 / 1;
   background: #d1d5db;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
   border-radius: 2px;
+  transition: transform 0.2s ease;
 }
 
 .mountain-cell.completed {
   background: #6d8cff;
+}
+
+.mountain-cell:hover {
+  transform: translateY(-2px);
 }
 
 .footer {
