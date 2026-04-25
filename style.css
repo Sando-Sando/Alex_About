@@ -135,6 +135,26 @@ body {
   color: #111827;
 }
 
+.mountain-progress-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  max-width: 320px;
+  margin: 24px auto 0;
+}
+
+.mountain-cell {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #d1d5db;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border-radius: 2px;
+}
+
+.mountain-cell.completed {
+  background: #6d8cff;
+}
+
 .footer {
   padding: 30px 20px 50px;
   text-align: center;
