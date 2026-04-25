@@ -25,8 +25,8 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #0b1020 0%, #11182d 55%, #1a2550 100%);
-  color: white;
+  background: #fffff;
+  color: #111827;
   padding: 110px 20px 90px;
 }
 
@@ -50,10 +50,10 @@ body {
   margin-bottom: 20px;
   padding: 8px 14px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
   font-size: 0.9rem;
-  color: #64748b;
+  color: #1e3a8a;
 }
 
 .hero h1 {
@@ -62,13 +62,14 @@ body {
   line-height: 1.05;
   letter-spacing: -0.03em;
   max-width: 850px;
+  color: #0f172a;
 }
 
 .hero-text {
   max-width: 700px;
   font-size: 1.15rem;
-  color: #64748b;
-  margin-bottom: 0 auto 32px;
+  color: #475569;
+  margin: 0 auto 32px;
 }
 
 .button {
