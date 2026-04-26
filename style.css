@@ -176,9 +176,143 @@ body {
   height: 90px;
 }
 
+.memory-game-wrap {
+  max-width: 760px;
+  margin: 24px auto 0;
+  text-align: center;
+}
+
+.memory-status {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 18px;
+}
+
+.memory-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin: 0 auto 20px;
+}
+
+.memory-card {
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 18px;
+  background: transparent;
+  cursor: pointer;
+  perspective: 1000px;
+  padding: 0;
+}
+
+.memory-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  transition: transform 0.45s ease;
+  transform-style: preserve-3d;
+}
+
+.memory-card.flipped .memory-card-inner,
+.memory-card.matched .memory-card-inner {
+  transform: rotateY(180deg);
+}
+
+.memory-card-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e5e7eb;
+}
+
+.memory-card-front {
+  background: linear-gradient(135deg, #6d8cff 0%, #4f46e5 100%);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.memory-card-back {
+  background: white;
+  color: #0f172a;
+  transform: rotateY(180deg);
+  padding: 10px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.memory-type {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+}
+
+.memory-value {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.memory-eye-image {
+  width: 70%;
+  max-width: 92px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 4px auto 0;
+}
+
+.memory-card.matched .memory-card-back {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.memory-restart {
+  display: inline-block;
+  background: #6d8cff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.memory-restart:hover {
+  background: #5d7df7;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .memory-board {
+    gap: 10px;
+  }
+
+  .memory-card-front {
+    font-size: 1.1rem;
+  }
+
+  .memory-value {
+    font-size: 0.88rem;
+  }
+
+  .memory-eye-image {
+    width: 68%;
+  }
+
 .footer {
   padding: 30px 20px 50px;
   text-align: center;
   color: #6b7280;
   font-size: 0.95rem;
 }
+
