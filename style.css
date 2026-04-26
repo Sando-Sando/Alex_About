@@ -192,7 +192,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  max-width: 420px;
+  max-width: 380px;
   margin: 0 auto 20px;
 }
 
