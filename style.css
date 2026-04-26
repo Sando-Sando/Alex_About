@@ -152,6 +152,30 @@ body {
   border-radius: 999px;
 }
 
+.mini-photo-mountains {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.photo-triangle {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+}
+
+.photo-triangle.large {
+  width: 90px;
+  height: 90px;
+}
+
 .footer {
   padding: 30px 20px 50px;
   text-align: center;
