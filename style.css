@@ -264,7 +264,7 @@ body {
 
 .memory-eye-image {
   width: 60%;
-  max-width: 55px;
+  max-width: 100px;
   height: auto;
   object-fit: contain;
   display: block;
