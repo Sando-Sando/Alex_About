@@ -263,12 +263,12 @@ body {
 }
 
 .memory-eye-image {
-  width: 60%;
-  max-width: 100px;
+  width: 85%;
+  max-width: none;
   height: auto;
   object-fit: contain;
   display: block;
-  margin: 2px auto 0;
+  margin: 0 auto;
 }
 
 .memory-card.matched .memory-card-back {
