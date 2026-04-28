@@ -228,6 +228,7 @@ body {
   align-items: center;
   justify-content: center;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
   border: 1px solid #e5e7eb;
 }
@@ -240,23 +241,23 @@ body {
 }
 
 .memory-card-back {
-  background: white;
-  color: #0f172a;
-  transform: rotateY(180deg);
-  padding: 4px;
-  flex-direction: column;
-  gap: 4px;
+  background: white;
+  color: #0f172a;
+  transform: rotateY(180deg);
+  padding: 4px;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .memory-type {
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #64748b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
 }
 
 .memory-value {
@@ -313,6 +314,7 @@ body {
   .memory-eye-image {
     width: 68%;
   }
+}
 
 .footer {
   padding: 30px 20px 50px;
@@ -320,4 +322,3 @@ body {
   color: #6b7280;
   font-size: 0.95rem;
 }
-
