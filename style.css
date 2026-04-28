@@ -243,9 +243,9 @@ body {
   background: white;
   color: #0f172a;
   transform: rotateY(180deg);
-  padding: 8px;
+  padding: 4px;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .memory-type {
@@ -263,7 +263,7 @@ body {
 }
 
 .memory-eye-image {
-  width: 85%;
+  width: 96%;
   max-width: none;
   height: auto;
   object-fit: contain;
