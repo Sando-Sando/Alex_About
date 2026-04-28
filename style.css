@@ -240,13 +240,23 @@ body {
 }
 
 .memory-card-back {
-  background: white;
-  color: #0f172a;
-  transform: rotateY(180deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px;
+  background: white;
+  color: #0f172a;
+  transform: rotateY(180deg);
+  padding: 4px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.memory-type {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
 }
 
 .memory-value {
