@@ -55,10 +55,6 @@ function createCard(cardData, index) {
   const back = document.createElement("div");
   back.className = "memory-card-face memory-card-back";
 
-  const type = document.createElement("div");
-  type.className = "memory-type";
-  type.textContent = cardData.type === "word" ? "Emotion" : "Eyes";
-
   back.appendChild(type);
 
   if (cardData.type === "word") {
