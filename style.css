@@ -191,8 +191,8 @@ body {
 .memory-board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 380px;
+  gap: 14px;
+  max-width: 520px;
   margin: 0 auto 20px;
 }
 
